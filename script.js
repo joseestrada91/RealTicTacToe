@@ -44,7 +44,7 @@ myGame.controller("TicTacToeController", function($scope) {
 				$scope.cells[index] = 'X';
 				// Displays the letter 'X' on the view on the cell 
 				// that is clicked on. 
-				$scope.playerNum = "Player 1";
+				$scope.playerNum = "Player 2";
 				// Displays which players turn it is. 
 				// Called on line 25 of view.			
 				maxMoves();
@@ -63,7 +63,7 @@ myGame.controller("TicTacToeController", function($scope) {
 				sepArray[index] = 2;
 				console.log(sepArray);
 				$scope.cells[index] = 'O';
-				$scope.playerNum = "Player 2";
+				$scope.playerNum = "Player 1";
 				maxMoves();
 				winOrLose();
 				player--;

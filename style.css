@@ -1,0 +1,71 @@
+body.ng-scope {
+	width: 95%;
+}
+
+body {
+	background-image: url('img/BackgroundRobots.jpg');
+	background-size: cover;
+	width: 900px;
+}
+
+#playerOne{
+	width: 200px;
+	float: left;
+	text-align: center;
+	font-size: 23px;
+	margin-left: 50px;
+	color: white;
+}
+
+#playerTwo{
+	width: 200px;
+	float: right;
+	text-align: center;
+	font-size: 23px;
+	color: white;
+}
+.goTime {
+	color: rgb(0, 239, 255);
+	font-size: 120px;
+	width: 100px;
+	position: absolute;
+	top: 15.4%;
+	left: 28%;
+	z-index: 1;
+
+}
+
+#container {
+	width: 318px;
+	text-align: center;
+	margin: 0 auto;
+	color: white;
+}
+
+.whoStarts {
+	font-size: 40px;
+	line-height: 0px;
+	color: white;
+}
+
+.winner {
+	color: darkgray;
+	font-size: 30px;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255, 255, 255, .2);
+	border: 3px solid rgba(0, 0, 0, .6);
+	border-left: none;
+	color: white;
+	float: left;
+	font-size: 95px;
+
+}
+
+.cell:hover {
+	background:rgba(15, 173, 255, .6); 
+}
+

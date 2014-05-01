@@ -1,0 +1,32 @@
+<!doctype html>
+<html x-ng-app="TicTacToeApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body x-ng-controller="TicTacToeController" ng-keydown="onKeyPress($event)">
+	<div id="playerOne">
+		<h2>Player 1 'X'</h2>
+		<p x-ng-bind="oneScore"></p>
+		<p class="whoWon" x-ng-bind="youWin"></p>
+		<!-- <p x-ng-keypress="onKeyPress();"></p> -->
+	</div>
+	<div id="playerTwo">
+		<h2>Player 2 'O'</h2>
+		<p x-ng-bind="twoScore"></p>
+		<p class="whoWon" x-ng-bind="youWin"></p>
+	</div>
+	<div id="container">
+		<h4 class="whoStarts" x-ng-bind="playerStart"></h4><br /><h1 class="goTime" x-ng-bind="goNotify"></h1><h2 class="countDown" x-ng-bind="counter"></h2>
+	<div class="cell" x-ng-repeat="c in cells track by $index" x-ng-click="playerTurn($index);">{{c}}</div> 
+		<p x-ng-bind="playerNum"></p>
+		<h3 class="winner" x-ng-bind="whoWins"></h3>
+	</div>
+</body>
+</html>
+
+
+<!-- token: ade385fbc4b677148e8ce26de7d2508cd3b3214c -->
